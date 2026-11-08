@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'temperature_controller.dart';
-import 'temperature_view.dart';
+import 'splash_screen.dart';
 
 void main() {
   runApp(
@@ -21,7 +21,7 @@ class TemperatureConverterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tempora',
+      title: 'Thermos',
       theme: ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: const Color(0xFFF5F7FC),
@@ -30,8 +30,7 @@ class TemperatureConverterApp extends StatelessWidget {
         ),
         fontFamily: 'Roboto',
       ),
-      home: const TemperatureView(),
+      home: const SplashScreen(),
     );
   }
 }
-
